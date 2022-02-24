@@ -12,25 +12,25 @@ class AdjListGraph:
     def __init__(self,vertices):
         self.V = vertices
         # self.graph = [None] * self.V
-        self.graph = defaultdict(list)
+        self.adjList = defaultdict(list)
     
     # function to add edge in a directed graph
     def add_edge(self,src,dest):
         # node = AdjNode(dest)
         # node.next = self.graph[src]
         # self.graph[src] = node
-        self.graph[src].append(dest)
+        self.adjList[src].append(dest)
     
     def print_graph(self):
         for i in range(self.V):
             print("{}".format(i),end="->")
-            print(self.graph[i])
+            print(self.adjList[i])
             
     
     def BFS(self,s):
 
         #visited array
-        visited = [False] * graph.V
+        visited = [False] * self.V
 
         queue = []
         queue.append(s)
@@ -40,7 +40,7 @@ class AdjListGraph:
             s = queue.pop(0)
             print(s,end = " ")
 
-            for i in self.graph[s]:
+            for i in self.adjList[s]:
                 if visited[i] == False:
                     queue.append(i)
                     visited[i] = True
