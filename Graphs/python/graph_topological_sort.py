@@ -12,7 +12,7 @@ def topological_sort_util(graph,s,visited,stack):
     for v in graph.adjList[s]:
         if visited[v] == False:
             topological_sort_util(graph, v, visited,stack)
-    stack.append(s)
+    stack.insert(0, s)
 
     
 def topological_sort(graph):
@@ -23,7 +23,7 @@ def topological_sort(graph):
     for v in range(graph.V) :
         if visited[v] == False:
             topological_sort_util(graph, v, visited,stack)
-    print(stack[::-1])
+    print(stack)
 
 #create graph
 g = AdjListGraph(6)

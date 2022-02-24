@@ -26,6 +26,14 @@ class AdjListGraph:
             print("{}".format(i),end="->")
             print(self.adjList[i])
             
+    def get_transpose(self):
+        transpose = AdjListGraph(self.V)
+  
+        # Recur for all the vertices adjacent to this vertex
+        for i in self.adjList:
+            for j in self.adjList[i]:
+                transpose.add_edge(j,i)
+        return transpose
     
     def BFS(self,s):
 
