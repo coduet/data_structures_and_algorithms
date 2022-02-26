@@ -1,0 +1,64 @@
+Graphs
+------
+
+Graph Representation
+--------------------
+	# Graphs can be represented in two ways
+		i. Adjacency List 
+			- consists of an array Adj of size V(number of vertices in graph)
+			- Adj[u] contains list of vertices v such that there is an edge from u to v.
+			- Mostly used to represent sparse graph.(|E| mushc less than |V|^2)
+		ii. Adjacency Matrix
+			- Graph consists of a matrix A, of size V x V.
+			- If there is an edge from u to v then A[u,v] is 1, else 0
+			- Mostly used to represent dense graph.(|E| close to |V|^2)
+
+Graph Traversals
+------------------
+	# Breadth-First Search
+		- BFS is an algorithm used to discover every reachable vertex from a source in a graph.
+		- It discover all vertex at distance k from source before discovering any vertex at k+1.
+		- For any reachable vertex v, simple path in bfs from source to v is shortest`
+		- Used in Prim's Algo, Dijkstra
+		- Complexity - O(V+E)
+
+	# Depth-First Search
+		- DFS explores edges out of the most recently discovered vertex v that is still has unexplored out-edges.
+		- Used in Topological sort
+		- Complexity - O(V+E)
+
+	# Topological sort
+		- Topological sort is linear ordering of all vertices of a graoh such that if G contains an edge(u,v), then u 
+		appears before v in ordering
+		- Is only applicable on DAG or Directed Acyclic Graph
+
+	# Strongly connected component
+		- Strongly connected component of graph G, is a maximal set vertices such that every pair of vertices u  and v are rechable from each other.
+
+Minimum Spanning Trees
+----------------------
+	# Minimum Spanning tree
+		- A spanning tree of a undriectde weighted graph G, is a tree that includes all vertices of G.
+		- Cost of spanning tree is sum of weights of all edges in the tree.
+		- Minimum Spanning Tree(MST) is the one with least cost among all spanning trees.
+		- MST have applications in networks, cluster analysis etc.
+
+	# Kruskal's Algorithm
+		- Sort edges in increasing order
+		- Add edges starting from lowest wieght edge.
+		- Add edges that don't form cycles.
+		- Use disjoint set to check for cycles
+		- Time Complexity - O(ElogV + ElogE)
+
+	# Prim's Algorithm
+
+
+
+
+
+
+
+
+
+
+
