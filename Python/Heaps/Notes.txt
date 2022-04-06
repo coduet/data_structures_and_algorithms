@@ -1,0 +1,13 @@
+Heaps
+-----
+
+Heaps are Complete binary tree. Usually represented with arrays.
+
+Types
+	i. Min heap
+		- for each node in a min heap, data of the node is less than the data of its left and right child.
+		- root of the heap is minimum.
+
+	ii. Max heap
+		- for each node in a max heap, data of the node is greater than the data of its left and right child.
+		- root of the heap is maximum.
