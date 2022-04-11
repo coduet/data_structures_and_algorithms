@@ -1,0 +1,19 @@
+Sorting
+-------
+
+1. Merge Sort
+-------------
+	- A divide and conquer approach to sort arrays.
+	- It divides the array into two halves and then merges the two halves after they are sorted.
+	- Time complexity = θ(nlogn)
+	- Space complexity = O(n)
+	- Applications - Inversion Count Problem	
+
+2. Quick Sort 
+-------------
+
+3. Heap Sort
+------------
+
+4. Insertion Sort
+-----------------
