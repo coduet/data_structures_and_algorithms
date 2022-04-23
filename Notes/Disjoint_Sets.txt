@@ -30,13 +30,14 @@ Dijoint-set Forests
 	# In a disjoint set forest, each element points only to its parent.
 	# Root of each tree is the representative.
 
-	Optimizing implementations
-	--------------------------
+	Optimizations
+	-------------
 		# Union by rank
 			- For each node we maintain a rank.
 			- Generally, the rank is an upper bound to height of the node.
 			- During UNION, we make root with smaller rank point to the root with larger rank.
-	 		- Find has time complexity of O(log(n)).
 	 		- Union has time complexity of O(log(n)).
-	 		
+
 	 	# path-compression
+	 		- During FIND-SET, we make each node point directly to the root.
+	 		- Find has time complexity of O(log(n)).
