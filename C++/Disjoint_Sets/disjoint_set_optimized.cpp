@@ -12,13 +12,16 @@ class UnionByRank{
                 root[i] = i;
             }
         }
+
+        //path compression
         int find(int x){
-            while(x!=root[x]){
-                x = root[x];
-            }
-            return x;
+            if(x == root[x])
+                return x;
+            
+            return root[x] = find(root[x]);
         }
 
+        //union by rank
         void Union(int x,int y){
             int rootX = find(x);
             int rootY = find(y);

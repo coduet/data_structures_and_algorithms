@@ -1,0 +1,42 @@
+Disjoint Sets
+--------------
+	# Dijoint-set is a data structure that contains dijoint sets. S
+	# Sets with no common element between each other are called non-overlapping or "disjoint".
+	# Each set in disjoint-sets is identifide bby a represenatative, which is some member of the set.
+
+
+ Operations
+ ----------
+ 	# FIND-SET(x)
+ 		- Returns pointer to representative of the set to which object x belongs.
+
+ 	# UNION(x,y)
+ 		- It unites/combines the two sets that contain the object x and y belong.
+
+Implmentations
+-------------
+	 # Quick Find
+	 	- Find has time complexity of O(1).
+	 	- Union has time complexity of O(n).
+	 
+	 # Quick Union
+	 	- Find has time complexity of O(n).
+	 	- Union has time complexity of O(n).
+
+Dijoint-set Forests
+---------------
+	# To optimise the implementation of disjoint sets, we reperesent sets as rooted trees.
+	# Each rooted tree represents one set and each node is an element of that set,.
+	# In a disjoint set forest, each element points only to its parent.
+	# Root of each tree is the representative.
+
+	Optimizing implementations
+	--------------------------
+		# Union by rank
+			- For each node we maintain a rank.
+			- Generally, the rank is an upper bound to height of the node.
+			- During UNION, we make root with smaller rank point to the root with larger rank.
+	 		- Find has time complexity of O(log(n)).
+	 		- Union has time complexity of O(log(n)).
+	 		
+	 	# path-compression

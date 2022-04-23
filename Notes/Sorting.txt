@@ -11,6 +11,13 @@ Sorting
 
 2. Quick Sort 
 -------------
+	- Applies divide and conquer paradigm to sort arrays
+	- Approach quicj=k
+		# Partition array into 2 arrays 
+		# Sort two arrays
+		# Combine two arrays
+	- Avergage time = θ(nlogn), Worst =  θ(n^2)
+	- Space = O(1)
 
 3. Heap Sort
 ------------
