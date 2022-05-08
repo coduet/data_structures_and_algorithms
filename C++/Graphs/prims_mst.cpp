@@ -57,10 +57,6 @@ public:
         return cost;
     }
 };
-void printGraph(Graph const &graph)
-{
-   
-}
 int main()
 {
     Graph graph(5);

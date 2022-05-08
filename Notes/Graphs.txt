@@ -38,12 +38,14 @@ Graph Traversals
 Minimum Spanning Trees
 ----------------------
 	# Minimum Spanning tree
-		- A spanning tree of a undriectde weighted graph G, is a tree that includes all vertices of G.
+		- A spanning tree of a undirected weighted graph G, is a tree that includes all vertices of G.
 		- Cost of spanning tree is sum of weights of all edges in the tree.
 		- Minimum Spanning Tree(MST) is the one with least cost among all spanning trees.
 		- MST have applications in networks, cluster analysis etc.
 
 	# Kruskal's Algorithm
+		- A greedy approach, that selects edges with minimum weight first to make a MST.
+
 		- Sort edges in increasing order
 		- Add edges starting from lowest wieght edge.
 		- Add edges that don't form cycles.
@@ -51,7 +53,20 @@ Minimum Spanning Trees
 		- Time Complexity - O(ElogV + ElogE)
 
 	# Prim's Algorithm
+		- A greedy approach that selects vertice which takes minimum cost to reach.
+ 
 
+Single Source Shortest Path
+---------------------------
+	# Relaxation
+		- relaxing an edge means checking if we can improve the shortest path to a vertex v from vertex u.
+		- relaxation is the only way shortest-path estimates change. 
+		- Algorithms only differ in the order and frequency of relaxing the edge.
+
+	# Dijkstra'a Algorithm
+		- solves sssp on weighted, directed graph with non-negative edge weights.
+		- maintains set of vertices for which shortes-path from source is determined.
+		- uses min-priority queue of vertices with their distance from source as keys.
 
 
 
