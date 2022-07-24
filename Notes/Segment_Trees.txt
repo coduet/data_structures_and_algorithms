@@ -1,0 +1,9 @@
+Segment trees
+-------------
+    # A segment-tree is a data strucuture that is a tree and used to solve range query problems.
+    # Segment trees are used in problems where there multiple range queries and modification of elements of the same array.
+    # The leaf nodes of the segment tree are the elements of array we need to perform range query
+    # Time-complexity 
+        - Query = O(logN)
+        - Update = O(logN)
+    # Space-complexity - O(N)

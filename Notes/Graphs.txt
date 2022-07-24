@@ -67,7 +67,14 @@ Single Source Shortest Path
 		- solves sssp on weighted, directed graph with non-negative edge weights.
 		- maintains set of vertices for which shortes-path from source is determined.
 		- uses min-priority queue of vertices with their distance from source as keys.
+		- Time Complexity - O(E + VlogV)
+		- Space Complexity - O(V)
 
+	# Bellman-Ford Algorithm
+		- solves single-source shortest-paths problem in general case.
+		- the edge weights may be -ve.
+		- In a graph with no negative-weight cycle with N vertices, the shortest distance between 2 vertices has atmost n-1 edges.
+		- In a graph with negative-wight cycle, there is no shortest path.
 
 
 

@@ -1,0 +1,28 @@
+Dynamic Programming
+--------------------
+
+# DP is a programming paradigm, capableif solving problems with following characteristics
+    i. Overlapping subproblem 
+        - Problem can be broken into smaller version of the original problem and that are re-used multiple times.
+    ii.  Optimal substructure
+        - An optimal solution can be formed from optimal solutions to overlapping subproblems of original problem.
+# DP helps in reducing calculations and improving time complexity.
+
+DP Implementation
+-----------------
+    # Top-Down (Memoization)
+        - Implemented using recursion and made efficient using memoization 
+        - Memoizing a result means storing the result of a function call
+        - when the function is called again, we simply return the stored(memoized) value instead of recalculating.
+    # Bottom-Up (Tabulation)
+        - Implemented with iteration anbd starts at a base case.
+
+Approaching problem
+--------------------
+    # function/data substructure 
+        - to solve a dp problem, we need a function or a data strucuture to store/compute answer to problem.
+    # recurrence relation 
+        - A recurrence relation is an equation that relates different states with each other and aides in transition between states.
+    # Base case
+        - A base case is needed to stop the recurrence relation from infinitely looping.
+        
